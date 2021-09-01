@@ -1,0 +1,19 @@
+/* components/shop.wxss */
+.all{
+  color: rgba(126, 41, 2, 0.9);
+  font-weight: 600;
+
+}
+.btn{
+  position: absolute;
+  bottom: 25rpx;
+  right: 60rpx;
+  width: 122rpx; 
+  height: 82rpx;
+
+}
+.hbtn{
+  height: 92rpx;
+  width: 137rpx;
+  
+}

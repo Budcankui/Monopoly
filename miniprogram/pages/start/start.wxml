@@ -1,0 +1,35 @@
+<!--pages/start/start.wxml-->
+<view class="bgp">
+  <!-- 确认弹窗 -->
+  <modal-view show="{{showMadal}}" title="新的开始" content="是否覆盖原来的存档，进行新的游戏?" bindconfirm="confirmHandle"></modal-view>
+
+  <view class="contain">
+    <view class="userinfo">
+      <view class="user-avatar">
+        <open-data type="userAvatarUrl"
+          default-avatar="https://636c-cloud1-0gutn9fvb14fb557-1306666924.tcb.qcloud.la/%E5%9B%BE%E7%89%87/%E6%A9%98%E7%8C%AB%E5%A4%B4%E5%83%8F.png?sign=660d39f28d5b8f6df09fb5fbc572f4db&t=1630153958">
+        </open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </view>
+    <view class="btns">
+      <view class="sta" hover-class="hbtn">
+        <image class="img"
+          src="https://636c-cloud1-0gutn9fvb14fb557-1306666924.tcb.qcloud.la/%E5%9B%BE%E7%89%87/%E5%BC%80%E5%A7%8B%E9%A1%B5%E9%9D%A2/start.png?sign=d5a3d05b98aac7906a0053145e0856cf&t=1630239787"
+          bindtap="btnStartHandle"></image>
+      </view>
+      <view class="cont" hover-class="hbtn">
+        <image class="img"
+          src="https://636c-cloud1-0gutn9fvb14fb557-1306666924.tcb.qcloud.la/%E5%9B%BE%E7%89%87/%E5%BC%80%E5%A7%8B%E9%A1%B5%E9%9D%A2/cont.png?sign=bd4d73a1413d64a734e08b18663b93c1&t=1630239736"
+          bindtap="btnContinueHandle"></image>
+      </view>
+      <navigator target="miniProgram" open-type="exit">
+        <view class="exi" hover-class="hbtn">
+          <image class="img"
+            src="https://636c-cloud1-0gutn9fvb14fb557-1306666924.tcb.qcloud.la/%E5%9B%BE%E7%89%87/%E5%BC%80%E5%A7%8B%E9%A1%B5%E9%9D%A2/exi.png?sign=77d1b506f741990324ec523c38bc77ad&t=1630239774">
+          </image>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

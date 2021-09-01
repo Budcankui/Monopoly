@@ -1,0 +1,92 @@
+/* components/modal/modal.wxss */
+.mask{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(7, 7, 7,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .contain{
+    position: absolute;
+    top:  20%;
+    width: 500rpx;
+    display: flex;
+    flex-direction: column;
+  }
+  .cat{
+  width: 100%;
+  }
+  
+  .content{
+  position: relative;
+  top: 0px;
+  width: 100%;
+  background-image: url(https://636c-cloud1-0gutn9fvb14fb557-1306666924.tcb.qcloud.la/%E5%9B%BE%E7%89%87/%E7%A1%AE%E8%AE%A4%E5%BC%B9%E7%AA%97/%E6%A1%86.png?sign=1fdcb03adc94f2582cd927a7efdef4da&t=1630229633);
+  background-size: 100% 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+  }
+
+  .text{
+  margin-right: 7rpx;
+  width: 400rpx;
+ 
+  background-size: 100% 100%;
+  background-image: url(https://636c-cloud1-0gutn9fvb14fb557-1306666924.tcb.qcloud.la/%E5%9B%BE%E7%89%87/%E7%A7%91%E6%99%AE/%E6%96%87%E5%AD%97%E6%A1%86.png?sign=7a2702bb04f01261d43f53e44f861794&t=1630230555);
+  
+  padding-top:25rpx ;
+  padding-left: 26rpx;
+  padding-right: 16rpx;
+  padding-bottom: 50rpx;
+  
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(58, 21, 3);   
+ 
+  text-align: justify;
+  font-family: KaiTi;
+  }
+
+.title{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20rpx;
+  color: rgb(58, 21, 3);   
+  font-family: KaiTi;
+ font-weight:bold
+
+}
+
+  .btns{
+    width: 500rpx;
+    /* height: 150rpx; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: rpx;
+    margin-bottom: 15rpx;
+  }
+
+  .confirm{
+    margin-left: 20rpx;
+    width: 57rpx;
+    padding: 20rpx;
+  }
+
+  .cancel{
+    padding: 20rpx;
+    padding-right: 25rpx;
+    width: 50rpx;
+  }
+  
+
+  
+  
+  

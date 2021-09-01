@@ -1,0 +1,28 @@
+<!--components/que/que.wxml-->
+<view class="mask" hidden="{{!show}}" catchtap="disable">
+
+  <view class="content" style="background-image: url({{content}})"  >
+    <view class="que" style="background-image: url({{que}})"><text class="Q">Q：</text> <text class="Qdes">{{ques}}( )
+    {{reason}}</text></view>
+    <view class="items">
+
+      <view class="item" hover-class="hitem" style="background-image: url({{item}})" catchtap="hitone"><text class="abcd" >A. </text>{{ansone}}</view>
+      <view class="item" hover-class="hitem" style="background-image: url({{item}})" catchtap="hittwo"><text class="abcd">B. </text>{{anstwo}}</view>
+      <view class="item"  hover-class="hitem" style="background-image: url({{item}})" catchtap="hitthree"><text class="abcd">C. </text>{{ansthree}}</view>
+      <view class="item"  hover-class="hitem" style="background-image: url({{item}})" catchtap="hitfour"><text class="abcd">D. </text>{{ansfour}}</view>
+
+    </view>
+
+  </view>
+
+  <view class="toolBar" style="background-image: url({{toolBar}})">
+
+    <view class="tool"  style="background-image: url({{tool}})" catchtap="toolcHandle">
+      <view class="num">{{num}}</view>
+    </view>
+
+    <view class="tool-mask" hidden="{{showtoolc}}" catchtap="disable"></view>
+
+  </view>
+
+</view>

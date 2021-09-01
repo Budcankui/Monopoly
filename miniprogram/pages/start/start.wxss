@@ -1,0 +1,76 @@
+/* pages/start/start.wxss */
+.bgp {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background-image: url(https://636c-cloud1-0gutn9fvb14fb557-1306666924.tcb.qcloud.la/%E5%9B%BE%E7%89%87/%E5%BC%80%E5%A7%8B%E9%A1%B5%E9%9D%A2/backgp.png?sign=7ac6ca0a7690fd01414f933f1fc494f7&t=1630239505);
+  background-size: 100% 100%;
+}
+.contain{
+  position: absolute;
+  top: 46%;
+  bottom: 0%;
+width: 100%;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(0, 8, 10);
+  width: 220rpx;
+ background-color: rgba(3, 107, 85, 0.3);
+ border-radius: 5%;
+  background-size: 100% 100%;
+  height: 210rpx;
+  padding-bottom: 10rpx;
+  padding-top: 20rpx;
+  color:  rgb(1, 58, 31);
+}
+
+.user-avatar {
+  overflow: hidden;
+  width: 134rpx;
+  height: 134rpx;
+  margin: 20rpx;
+  margin-top: 12rpx;
+  border-radius: 50%;
+}
+.btns{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+margin-top: 35rpx;
+height:340rpx;
+}
+
+.sta {
+  height: 82rpx;
+  width: 390rpx;
+}
+.btns .img{
+  width: 100%;
+  height: 100%;
+}
+
+.cont {
+  height: 82rpx;
+  width: 390rpx;
+}
+
+.exi {
+  height: 80rpx;
+  width: 390rpx;
+}
+
+.hbtn{
+  width: 420rpx;
+  /* height: 90rpx; */
+
+}

@@ -1,0 +1,143 @@
+/* pages/rank/rank.wxss */
+.container{
+  position: absolute;
+  background-color: rgb(17, 4, 4,0.5);
+  width: 100%;
+top: 0;
+left: 0;
+}
+.top{
+  box-sizing: border-box;
+  width: 100%;
+  height: 80rpx;
+  background-color: rgb(137, 33, 197);
+  border-bottom:2px solid;
+  border-bottom-color: rgb(126, 5, 150);
+  text-align: center;
+  color: rgba(247, 247, 248, 1);
+  padding-top:10rpx;
+  font-size: 20px;
+    letter-spacing: 15rpx;
+}
+.list-wrapper{
+  overflow: hidden;
+  flex: 1;
+  background-color: rgb(174, 63, 218);
+  justify-content: space-between;
+  width: 100%;
+}
+
+.list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.item{
+  margin-top: 20rpx;
+  width: 700rpx;
+  height: 150rpx;
+  background-color: rgb(186, 121, 247);
+  box-sizing: border-box;
+  border: 2px;
+  border-radius: 5%;
+
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+.avatar{
+  box-sizing: border-box;
+  width: 124rpx; height: 124rpx;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  border: 2px solid rgb(212, 214, 223);
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.mvp{
+  color: yellow;
+  border: 3px solid rgb(252, 252, 0,0.9);
+}
+.mvp1{
+  color: yellow;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+.mvp2 {
+  color: yellow;
+}
+
+.content{
+  height: 100%;
+ flex: 1;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ color: rgb(243, 240, 235);
+}
+.rank{
+  width: 23rpx;
+  margin-left: 5rpx;
+  margin-right: 25rpx;
+}
+.fish{
+  height: 60rpx;
+  width: 70rpx;
+  background-image: url(https://636c-cloud1-0gutn9fvb14fb557-1306666924.tcb.qcloud.la/%E5%9B%BE%E7%89%87/%E6%8E%92%E8%A1%8C/%E5%B0%8F%E9%B1%BC%E5%B9%B2.png?sign=6a110bf28f2f6b5c7f49e8b4dfc66c5b&t=1630331757);
+  background-size: 100% 100%;
+}
+.score{
+  width: 175rpx;
+  margin-right: 20rpx;
+
+}
+.name{
+  overflow: hidden;
+  width: 200rpx;
+}
+
+.bar{
+  box-sizing: border-box;
+  width: 100%;
+  height: 140rpx;
+  background-color: rgb(179, 48, 240);
+  border-top:2px solid;
+  border-top-color: rgb(218, 101, 241);
+  display: flex;
+  align-items: center;
+}
+
+.myavatar{
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 124rpx; height: 124rpx;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  border: 3px solid rgb(208, 186, 238);
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.myrank{
+  box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+ 
+}
+.myname{
+  overflow: hidden;
+  box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+
+}
+.con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex:1
+}

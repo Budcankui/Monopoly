@@ -1,0 +1,22 @@
+<view class="mask" hidden="{{!show}}" catchtap="disable">
+
+  <view class="contain">
+
+    <image class="cat"
+      src="{{cat}}"
+      mode="widthFix"></image>
+
+    <view class="content" style="background-image: url({{con}})">
+      <view class="text"  style="background-image: url({{text}})">{{content}}</view>
+      <view class="image" style="background-image: url({{img}})">
+      <image class="img" src="{{url}}" mode="widthFix"></image>
+      </view>
+      <image class="btn"
+        src="{{btn}}"
+        catchtap="confirm" mode="widthFix"></image>
+
+    </view>
+
+  </view>
+
+</view>

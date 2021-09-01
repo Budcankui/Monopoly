@@ -1,0 +1,52 @@
+<!--components/shop.wxml-->
+<view hidden="{{!show}}" catchtap="disable" class="all"
+  style="position: fixed; top: 0rpx; left: 0; background-image: url({{background}}); background-size: 100% 100%; width: 100%; height: 100%; z-index: 2000">
+  
+  <view  class="btn" hover-class="hbtn" catchtap="hideHandle"   >
+  <image src="https://636c-cloud1-0gutn9fvb14fb557-1306666924.tcb.qcloud.la/%E5%9B%BE%E7%89%87/%E5%95%86%E5%BA%97/%E8%BF%94%E5%9B%9E%E6%8C%89%E9%92%AE.png?sign=265794f0407f6147cbf23d2e74e79271&t=1630251767"
+    style="width: 100%; height: 100%;"
+    ></image>
+
+</view>
+
+
+  <view
+    style="position: absolute; width: 298rpx; left: 47%; top: 4.6%; height: auto; display: block; box-sizing: border-box; color: brown; font-weight: 500; font-size: 36px">
+    {{fish}}</view>
+ 
+  <view style="position: absolute; width: 185rpx; left: 3.15%; top: 22.4%; display: block; border-radius: 50%; height: 179rpx; box-sizing: border-box; background-image: url({{toolc}}); background-size: 100% 100%" catchtap="buyToolc"></view>
+
+  <view style="position: absolute; width: 186rpx; left: 60%; top: 51.6%; display: block; border-radius: 50%; height: 179rpx; box-sizing: border-box; background-size: 100% 100%; background-image: url({{toolb}})" catchtap="buyToolb"></view>
+
+  <view style="position: absolute; width: 186rpx; left: 17.50%; top: 42.4%; display: block; border-radius: 50%; height: 179rpx; box-sizing: border-box; background-size: 100% 100%; background-image: url({{toola}})" catchtap="buyToola"></view>
+
+  <view style="position: absolute; width: 186rpx; left: 73%; top: 12.3%; display: block; border-radius: 50%; height: 179rpx; box-sizing: border-box; background-size: 100% 100%; background-image: url({{tool1}})" catchtap="buyTool1"></view>
+  <view style="position: absolute; width: 186rpx; left: 42.666%; top: 26.3%; display: block; border-radius: 50%; height: 179rpx; box-sizing: border-box; background-size: 100% 100%; background-image: url({{tool2}})" catchtap="buyTool2"></view>
+  <view style="position: absolute; width: 186rpx; left: 71%; top: 34.4%; display: block; border-radius: 50%; height: 179rpx; box-sizing: border-box; background-size: 100% 100%; background-image: url({{tool3}})" catchtap="buyTool3"></view>
+
+
+  <view
+    style="position: absolute; width: 122rpx; left: 10.4%; top: 22.8%; height: 44rpx; display: block; box-sizing: border-box; font-size: 13px; font-weight: 500" catchtap="buyToolc">
+    价格: 5</view>
+
+  <view
+    style="position: absolute; width: 122rpx; left: 50.1%; top: 26.6%; height: 44rpx; display: block; box-sizing: border-box; font-size: 13px; font-weight: 500" catchtap="buyTool2">
+    价格: 5</view>
+
+  <view
+    style="position: absolute; width: 122rpx; left: 80.5%; top: 12.5%; height: 44rpx; display: block; box-sizing: border-box; font-size: 13px; font-weight: 500" catchtap="buyTool1">
+    价格: 5</view>
+
+  <view
+    style="position: absolute; width: 122rpx; left: 78.4%; top: 34.7%; height: 44rpx; display: block; box-sizing: border-box; font-size: 13px; font-weight: 500" catchtap="buyTool3">
+    价格: 5</view>
+
+  <view
+    style="position: absolute; width: 122rpx; top: 52%; height: 44rpx; display: block; box-sizing: border-box; font-size: 13px; font-weight: 500; left: 67.7%" catchtap="buyToolb">
+    价格: 5</view>
+
+  <view
+    style="position: absolute; width: 122rpx; left: 24.8%; top: 42.7%; height: 44rpx; display: block; box-sizing: border-box; font-size: 13px; font-weight: 500" catchtap="buyToola">
+    价格: 1</view>
+
+</view>

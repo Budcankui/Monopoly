@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+  "tip-view":"/components/tip/tip",
+  "question-view":"/components/que/que",
+  "shop-view":"/components/shop/shop",
+  "modal-view":"/components/modal/modal"
+  }
+}

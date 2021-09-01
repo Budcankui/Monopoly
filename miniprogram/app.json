@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/canvas/canvas",
+    "pages/rank/rank"
+    
+  ],
+  "window": {
+    "navigationBarTitleText": "丹青华夏"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

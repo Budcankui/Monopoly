@@ -1,0 +1,76 @@
+<!--pages/canvas/canvas.wxml-->
+<view class="load-mask" hidden="{{!loading}}" catchtap="disableHandle"></view>
+<view class="Map" >
+  <!-- 科普组件 -->
+  <tip-view show="{{showKepu}}" content="{{tipContent}}" url="{{tipUrl}}" bindconfirm="hiddeKepuHandle"></tip-view>
+  <!-- 问答组件 -->
+  <question-view show="{{showQuestion}}" ansone="{{item1}}" anstwo="{{item2}}" ansthree="{{item3}}" ansfour="{{item4}}" num="{{toolc}}" reason="{{reason}}"
+    ques="{{question}}" bindhitone="ans1Handle" bindhittwo="ans2Handle" bindhitthree="ans3Handle" bindtoolcHandle="toolcHandle"
+    bindhitfour="ans4Handle"></question-view>
+    <!-- 商店组件 -->
+    <shop-view show="{{showShop}}" fish="{{score}}"bindhideShop="hideShopHandle"  bindbuyTool1="buyTool1Handle"  bindbuyTool2="buyTool2Handle" bindbuyTool3="buyTool3Handle" bindbuyToola="buyToolaHandle" bindbuyToolb="buyToolbHandle" bindbuyToolc="buyToolcHandle"></shop-view>
+    <!-- 确认弹窗 -->
+    <modal-view show="{{showMadal}}" title="破产" content="您已破产,是否继续游戏？" bindconfirm="continueHandle" bindcancel="exitHandle"></modal-view>
+
+  <!-- 顶部提示栏 -->
+  <view class="topText" >
+    <view class="text "><text class="text1">提示：</text>{{topText}}</view>
+  </view>
+
+    <!-- 排行榜 -->
+    <view class="rank-wrapper">
+  <view class="rank" hover-class="hrank"  bindtap="rankHandle"style="height:140rpx;" ><view class="rank-text">排行榜</view> </view>
+</view>
+ 
+  <!-- 小鱼干样式 -->
+  <view class="fish" >
+    <text class="score"> {{score}}</text>
+  </view>
+
+
+  <!-- 格子类型 -->
+  <image class="block" wx:for="{{blocks}}" wx:key="index"
+    style="left:{{item.x}}px; top:{{item.y}}px;width:{{blockWidth}}%;height:{{blockHeight}}%;" src="{{item.url}}">
+  </image>
+  <!-- 人物 -->
+  <view class="Role" animation="{{animationRole}}" style="width:{{roleWidth}}%;height:{{roleHeight}}%;"></view>
+
+ 
+
+  <!-- 折叠道具栏样式 -->
+  <view class="toolBarFolded" hidden="{{showUnfoldToolBar||showQuestion||showKepu}}">
+    <view class="icons icon1" hover-class="hicon" catchtap="tapToolBarFoldedHanddle" ></view>
+    <view class="icons icon2"  hover-class="hicon" catchtap="throwHandle"> <view class="disabletoola" catchtap="disableHandle" style="display: {{disabletools ? 'flex':'none' }}"></view>  <view  style="display: {{disabletools ? 'flex':'none' }}" class="rad-mask"></view></view>
+    <view class="icons icon3" hover-class="hicon" catchtap="showShopHandle"></view>
+    <view class="toola">{{toola}}</view>
+  </view>
+  <!-- 展开道具栏样式 -->
+  <view class="toolBarUnFoldedMask" hidden="{{!showUnfoldToolBar||showQuestion||showKepu}}" 
+    bindtap="tapToolBarUnFoldedMaskHandle">
+    <view class="toolBarUnFolded">
+      <view class="row1">
+        <view class="item1" hover-class="hitem" bindtap="throwHandle" >
+          <view class="toolx">{{toola}}</view>
+        </view>
+        <view class="item2" hover-class="hitem"bindtap="toolbHandle">
+          <view class="toolx">{{toolb}}</view>
+        </view>
+        <view class="item3"hover-class="hitem" bindtap="toolcHandle">
+          <view class="toolx">{{toolc}}</view>
+        </view>
+      </view>
+      <view class="row2">
+        <view class="item1"hover-class="hitem" bindtap="tool1Handle" >
+          <view class="toolx">{{tool1}}</view>
+        </view>
+        <view class="item2" hover-class="hitem"bindtap="tool2Handle" >
+          <view class="toolx">{{tool2}}</view>
+        </view>
+        <view class="item3" hover-class="hitem"bindtap="tool3Handle" >
+          <view class="toolx">{{tool3}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
