@@ -1,6 +1,6 @@
 // pages/rank/rank.js
 wx.cloud.init({
-  env: 'cloud1-0gutn9fvb14fb557',
+  env: 'cloud-6gjcg45vb8bb67da',
 })
 const db = wx.cloud.database();
 const _ = db.command

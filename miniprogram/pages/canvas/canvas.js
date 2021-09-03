@@ -27,7 +27,7 @@ var flagGetGameData = false
 
 var app = getApp()
 wx.cloud.init({
-  env: 'cloud1-0gutn9fvb14fb557',
+  env: 'cloud-6gjcg45vb8bb67da',
 })
 const db = wx.cloud.database();
 const _ = db.command
@@ -1012,6 +1012,12 @@ Page({
   },
 
   rankHandle: async function () {
+    await wx.cloud.callFunction({
+      name: 'saveGameData',
+      data: {
+        gameData: this.gameData
+      },
+    })
     await this.delay(200) //延时200毫秒
     await this.getOpenid()
     await this.ifHasUesrInfo()
